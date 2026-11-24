@@ -1,5 +1,7 @@
 # Boss Rush: Every Deadline Is a Boss Fight
 
+*My entry for the contest **Your Deadline, Your Design: Create a Countdown Lock Screen**.*
+
 Boss Rush turns your iPhone lock screen into a pixel-art boss fight. Each real deadline is a boss. The nearest one stands in front of your hero and transforms as its date gets close; the next ones wait their turn in a column. Every time you pick up your phone, you see what you are up against and how long you have left.
 
 ![The same lock screen over one season: QSB in its normal form, QSB's final form two days out, MATH's demon form at night, BIOE's final form at dawn](docs/img/season.png)
@@ -77,7 +79,3 @@ To open it from your phone on the same Wi-Fi, run `bun run dev --host` and use t
 - Tested on one iPhone with iOS 27. The iOS 26 and iPad layouts exist but were not tested on a device.
 - The wallpaper is a still picture that you export and set. An automatic swap through the day with Apple Shortcuts is planned but not yet verified on a phone.
 - The NEXT line goes by date; it does not know which steps you have finished.
-
----
-
-Code map: `packages/core` (plan, schedule, layout, palette) · `packages/render` (pictures and PNG, with golden-image tests) · `packages/web` (the app) · `packages/tools` (art import and converters) · `art/src` (the original pictures) · `art/export` (the sprite atlas) · `art/ref` (box-mannequin pose references). Run every check with `bun run check`.
