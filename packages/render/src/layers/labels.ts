@@ -32,7 +32,7 @@ function countdown(boss: BossState, remaining: string, width: number): string {
 // A waiting boss shows its course when the title fits the column: "MATH 15D" read as a course
 // number (owner's phone test, Nov 23). The front plate keeps the countdown.
 export function queueLabel(boss: BossState, width: number): string {
-  if (displayName(boss, width) === boss.title) return boss.title;
+  if (!hasSecretDate(boss) && displayName(boss, width) === boss.title) return boss.title;
   const time = boss.showHours ? `${boss.hoursLeft}h` : `${boss.daysLeft}d`;
   return countdown(boss, time, width);
 }

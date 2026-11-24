@@ -28,6 +28,7 @@ it('hides a waiting boss’s countdown without changing the ordinary front timer
   );
   for (const showHours of [false, true]) {
     expect(queueLabel({ ...waiting, showHours }, compact.zones.queue.w)).toBe('??? ???');
+    expect(queueLabel({ ...waiting, showHours, title: '???' }, compact.zones.queue.w)).toBe('??? ???');
   }
   const emptyTimer = show(false, 0);
   expect(Buffer.from(emptyTimer.rgba).equals(show(true, 0).rgba)).toBe(true);
