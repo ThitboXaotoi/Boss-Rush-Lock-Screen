@@ -15,14 +15,24 @@ export function hasSecretDate(boss: Pick<BossState, 'short'>): boolean {
   return boss.short === SECRET;
 }
 
-// Keep the countdown and its unit, even when the profile can't show the whole short name.
+// Owner, Nov 23: show the course ("QSB 278") wherever it fits; the short name is the fallback.
+// A secret boss keeps its `???` short name, so its title can never leak.
+function displayName(boss: BossState, width: number): string {
+  return !hasSecretDate(boss) && textWidth(boss.title) <= width ? boss.title : boss.short;
+}
+
+// Keep the countdown and its unit, even when the profile can't show the whole name.
 function countdown(boss: BossState, remaining: string, width: number): string {
   const time = hasSecretDate(boss) ? SECRET : remaining;
-  const name = clipText(boss.short, width - textWidth(` ${time}`));
+  const room = width - textWidth(` ${time}`);
+  const name = clipText(displayName(boss, room), room);
   return name ? `${name} ${time}` : clipText(time, width);
 }
 
+// A waiting boss shows its course when the title fits the column: "MATH 15D" read as a course
+// number (owner's phone test, Nov 23). The front plate keeps the countdown.
 export function queueLabel(boss: BossState, width: number): string {
+  if (displayName(boss, width) === boss.title) return boss.title;
   const time = boss.showHours ? `${boss.hoursLeft}h` : `${boss.daysLeft}d`;
   return countdown(boss, time, width);
 }

@@ -32,5 +32,6 @@ it('hides a waiting boss’s countdown without changing the ordinary front timer
   const emptyTimer = show(false, 0);
   expect(Buffer.from(emptyTimer.rgba).equals(show(true, 0).rgba)).toBe(true);
   expect(Buffer.from(emptyTimer.rgba).equals(show(false, 1).rgba)).toBe(false);
-  expect(queueLabel({ ...waiting, short: '??' }, compact.zones.queue.w)).toBe('?? 16d');
+  const long = 'A title too long for the column';
+  expect(queueLabel({ ...waiting, short: '??', title: long }, compact.zones.queue.w)).toBe('?? 16d');
 });

@@ -35,7 +35,8 @@ it('clips at each buffer edge without wrapping pixels into neighbouring rows', (
 });
 
 it.each([compact, glass])('formats countdown and NEXT labels within $name zones', ({ zones }) => {
-  expect(queueLabel(fixtureScenes.farDay.queue[0]!, zones.queue.w)).toBe('QSB 31d');
+  expect(queueLabel(fixtureScenes.farDay.queue[0]!, zones.queue.w)).toBe('QSB 278');
+  expect(namePlateLabel(fixtureScenes.farDay.queue[0]!, zones.namePlate.w)).toBe('QSB 278 31 DAYS');
   expect(queueLabel(fixtureScenes.finalDawn.front, zones.queue.w)).toBe('LOCK 42h');
   expect(namePlateLabel(fixtureScenes.enragedDusk.front, zones.namePlate.w)).toBe('LOCK 5 DAYS');
   expect(namePlateLabel(fixtureScenes.finalDawn.front, zones.namePlate.w)).toBe('LOCK 42 H');
