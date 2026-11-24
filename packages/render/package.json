@@ -1,0 +1,17 @@
+{
+  "name": "@boss-rush/render",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "test": "vitest run --passWithNoTests",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@boss-rush/core": "workspace:*",
+    "fast-png": "8.0.0"
+  }
+}

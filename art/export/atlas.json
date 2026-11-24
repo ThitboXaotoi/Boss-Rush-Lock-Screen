@@ -1,0 +1,210 @@
+{
+  "sprites": {
+    "boss_bioe_dark": {
+      "x": 0,
+      "y": 0,
+      "w": 112,
+      "h": 112
+    },
+    "boss_bioe_dark_96": {
+      "x": 112,
+      "y": 336,
+      "w": 96,
+      "h": 96
+    },
+    "boss_bioe_final": {
+      "x": 112,
+      "y": 0,
+      "w": 112,
+      "h": 112
+    },
+    "boss_bioe_final_96": {
+      "x": 208,
+      "y": 336,
+      "w": 96,
+      "h": 96
+    },
+    "boss_bioe_light": {
+      "x": 224,
+      "y": 0,
+      "w": 112,
+      "h": 112
+    },
+    "boss_bioe_light_96": {
+      "x": 304,
+      "y": 336,
+      "w": 96,
+      "h": 96
+    },
+    "boss_bioe_portrait": {
+      "x": 384,
+      "y": 544,
+      "w": 32,
+      "h": 32
+    },
+    "boss_bioe_portrait_28": {
+      "x": 0,
+      "y": 640,
+      "w": 28,
+      "h": 28
+    },
+    "boss_hood_dark": {
+      "x": 336,
+      "y": 0,
+      "w": 112,
+      "h": 112
+    },
+    "boss_hood_dark_96": {
+      "x": 400,
+      "y": 336,
+      "w": 96,
+      "h": 96
+    },
+    "boss_hood_final": {
+      "x": 0,
+      "y": 112,
+      "w": 112,
+      "h": 112
+    },
+    "boss_hood_final_96": {
+      "x": 0,
+      "y": 448,
+      "w": 96,
+      "h": 96
+    },
+    "boss_hood_light": {
+      "x": 112,
+      "y": 112,
+      "w": 112,
+      "h": 112
+    },
+    "boss_hood_light_96": {
+      "x": 96,
+      "y": 448,
+      "w": 96,
+      "h": 96
+    },
+    "boss_hood_monster": {
+      "x": 224,
+      "y": 112,
+      "w": 112,
+      "h": 112
+    },
+    "boss_hood_monster_96": {
+      "x": 192,
+      "y": 448,
+      "w": 96,
+      "h": 96
+    },
+    "boss_hood_portrait": {
+      "x": 416,
+      "y": 544,
+      "w": 32,
+      "h": 32
+    },
+    "boss_hood_portrait_28": {
+      "x": 28,
+      "y": 640,
+      "w": 28,
+      "h": 28
+    },
+    "boss_math_dark": {
+      "x": 336,
+      "y": 112,
+      "w": 112,
+      "h": 112
+    },
+    "boss_math_dark_96": {
+      "x": 288,
+      "y": 448,
+      "w": 96,
+      "h": 96
+    },
+    "boss_math_final": {
+      "x": 0,
+      "y": 224,
+      "w": 112,
+      "h": 112
+    },
+    "boss_math_final_96": {
+      "x": 384,
+      "y": 448,
+      "w": 96,
+      "h": 96
+    },
+    "boss_math_light": {
+      "x": 112,
+      "y": 224,
+      "w": 112,
+      "h": 112
+    },
+    "boss_math_light_96": {
+      "x": 0,
+      "y": 544,
+      "w": 96,
+      "h": 96
+    },
+    "boss_math_portrait": {
+      "x": 448,
+      "y": 544,
+      "w": 32,
+      "h": 32
+    },
+    "boss_math_portrait_28": {
+      "x": 56,
+      "y": 640,
+      "w": 28,
+      "h": 28
+    },
+    "boss_qsb_dark": {
+      "x": 224,
+      "y": 224,
+      "w": 112,
+      "h": 112
+    },
+    "boss_qsb_dark_96": {
+      "x": 96,
+      "y": 544,
+      "w": 96,
+      "h": 96
+    },
+    "boss_qsb_final": {
+      "x": 336,
+      "y": 224,
+      "w": 112,
+      "h": 112
+    },
+    "boss_qsb_final_96": {
+      "x": 192,
+      "y": 544,
+      "w": 96,
+      "h": 96
+    },
+    "boss_qsb_light": {
+      "x": 0,
+      "y": 336,
+      "w": 112,
+      "h": 112
+    },
+    "boss_qsb_light_96": {
+      "x": 288,
+      "y": 544,
+      "w": 96,
+      "h": 96
+    },
+    "boss_qsb_portrait": {
+      "x": 480,
+      "y": 544,
+      "w": 32,
+      "h": 32
+    },
+    "boss_qsb_portrait_28": {
+      "x": 84,
+      "y": 640,
+      "w": 28,
+      "h": 28
+    }
+  },
+  "width": 512,
+  "height": 668
+}

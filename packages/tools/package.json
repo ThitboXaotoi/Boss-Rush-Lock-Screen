@@ -1,0 +1,28 @@
+{
+  "name": "@boss-rush/tools",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./atlas": "./atlas/src/index.ts",
+    "./atlas/import-settings": "./atlas/src/import-settings.ts",
+    "./atlas/vite-plugin": "./atlas/src/vite-plugin.ts"
+  },
+  "scripts": {
+    "hero:import": "bun hero/convert.ts",
+    "ground:import": "uv run --no-project --python /usr/bin/python3 python ground/convert.py",
+    "font:import": "uv run --no-project --python /usr/bin/python3 python font/convert.py",
+    "art:import": "bun atlas/src/cli.ts",
+    "art:lint": "bun atlas/src/lint-cli.ts",
+    "test": "vitest run --passWithNoTests",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@boss-rush/core": "workspace:*",
+    "@boss-rush/render": "workspace:*",
+    "fast-png": "8.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "20"
+  }
+}

@@ -1,0 +1,32 @@
+node_modules/
+dist/
+coverage/
+.vite/
+*.local
+.DS_Store
+*.log
+# exporter scratch output
+out/
+
+# Owner mood references from existing works: kept local, never committed (public repo)
+art/ref/*.webp
+
+# Working notes, agent instructions, drafts and test evidence: kept on this machine only
+AGENTS.local.md
+CLAUDE.md
+GEMINI.md
+PLAN.md
+STATUS.md
+SPIKES.md
+OWNER_QUEUE.md
+briefs/
+status/
+design/
+site/
+data/
+docs/spikes/
+art/src/drafts/
+art/sheets/
+packages/phone/
+packages/tools/livephoto/
+packages/render/test/review/*.png

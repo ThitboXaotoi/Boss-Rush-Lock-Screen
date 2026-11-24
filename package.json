@@ -1,0 +1,26 @@
+{
+  "name": "boss-rush",
+  "private": true,
+  "type": "module",
+  "packageManager": "bun@1.4.4",
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "dev": "bun run --filter @boss-rush/web dev",
+    "build": "bun run --filter @boss-rush/web build",
+    "test": "bun run --filter './packages/*' test",
+    "typecheck": "bun run --filter './packages/*' typecheck",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "check": "bun run lint && bun run typecheck && bun run test && bun run build"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "@types/node": "20",
+    "eslint": "^9.39.5",
+    "globals": "^16.0.0",
+    "prettier": "^3.9.10",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.72.2",
+    "vitest": "^3.2.7"
+  }
+}
