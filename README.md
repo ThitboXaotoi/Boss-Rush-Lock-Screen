@@ -68,9 +68,9 @@ To open it from your phone on the same Wi-Fi, run `bun run dev --host` and use t
 ## How it was built
 
 - **TypeScript in a Bun workspace:** `core` (plan, schedule, layout, palette), `render` (scene to pixels to PNG), `web` (Preact app), `tools` (art import).
-- **Art pipeline.** I designed each boss in words; the pictures were generated with image models from those designs, on a flat green background. Our import tool removes the background, snaps the colours to a small palette per form, finds the portrait crop and packs everything into one sprite atlas. To control camera angles, which image models get wrong, the poses were blocked out as 3D box mannequins rendered in code (`art/ref/`) and attached as pose references.
+- **Art.** I worked with Gemini on the web to figure out the design of each boss, one at a time, and to draw the pictures on a flat green background. Our import tool removes the background, snaps the colours to a small palette per form, finds the portrait crop and packs everything into one sprite atlas. To control camera angles, which image models get wrong, the poses were blocked out as 3D box mannequins rendered in code (`art/ref/`) and attached as pose references.
 - **Tested:** 259 automated tests, including golden-image tests that compare rendered lock screens pixel for pixel.
-- **Built with AI coding agents.** Several agents (Claude Code and OpenCode) worked in this one repository at the same time, each from a written brief, with one integrator agent merging and reviewing; I directed the design.
+- **Code.** Written with AI coding agents in Claude Code and Antigravity, several working in this one repository at the same time from written briefs, with one agent merging and reviewing. I directed the design and tested it on my own phone.
 
 ## Known limits
 
